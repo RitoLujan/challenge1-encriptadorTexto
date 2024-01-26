@@ -1,0 +1,264 @@
+/* <------------------------------ Comienzo del CSS del BODY ------------------------------->*/
+
+body {
+    font-family: "Playfair Display", serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    margin: 0;
+}
+
+/* <------------------------------ Fin del CSS del BODY ------------------------------->*/
+/* <------------------------------ Comienzo del CSS del HEADER ------------------------------->*/
+
+header {
+    background: url(/images/footback.png);
+    color: white;
+    padding: 10px;
+}
+
+.navBar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    border-radius: 15%;
+}
+
+nav {
+    flex-grow: 1;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    font-size: 32px;
+    margin-right: 20px;
+}
+
+/* <------------------------------ Fin del CSS del HEADER ------------------------------->*/
+/* <------------------------------ Comienzo del CSS del MAIN ------------------------------->*/
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.conversionTexto {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.conversionTexto li {
+    width: 50%;
+    box-sizing: border-box;
+    padding: 0 10px;
+}
+
+.trabajoTexto {
+    background: #FFF6F6;
+}
+
+.textoConve {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: "Playfair Display", serif;
+    color: #000000;
+    font-size: 2em;
+    margin: 8% 8%;
+    border: none;
+    outline: none;
+    resize: none;
+    background: #FFF6F6;
+    height: 424px;
+    width: 85%;
+}
+
+.advertencia-icon {
+    transform: scale(0.75);
+    order: 2;
+    vertical-align: middle;
+}
+
+.advertencia {
+    order: 1;
+    vertical-align: middle;
+    margin-bottom: 10px;
+}
+
+.botones-contenedor {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+
+}
+
+.botones-contenedor button {
+    font-family: "Playfair Display", serif;
+    font-size: 1.5em;
+    cursor: pointer;
+    padding: 15px 0;
+    background: #F7DEDE;
+    width: 45%;
+    height: 67px;
+    border: none;
+    border-radius: 20px;
+    transition: 1s all;
+    margin-bottom: 10px;
+}
+
+.trabajoTexto button:hover {
+    background: #CE8E8E;
+    transform: scale(1.1);
+}
+
+.textoResultado {
+    background: url(/images/fondoTexto.png) no-repeat;
+    background-size: cover;
+}
+
+.contenedorResultado {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    border-radius: 10px;
+    margin: 10px;
+    width: 95%;
+    height: 85%;
+    background: rgba(206, 142, 142, 0.5);
+}
+
+.respuesta {
+    font-size: 25px;
+    position: absolute;
+    bottom: 20px;
+    text-align: center;
+}
+
+.buscar {
+    width: 100%;
+    height: auto;
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
+    transform: scale(0.7);
+    border-radius: 20%;
+}
+
+.copy {
+    font-family: "Playfair Display", serif;
+    font-size: 1.5em;
+    cursor: pointer;
+    padding: 15px 0;
+    background: #F7DEDE;
+    width: 150px;
+    height: 67px;
+    border: none;
+    border-radius: 20px;
+    transition: 1s all;
+    margin-bottom: 10px;
+}
+
+.copy:hover {
+    background: #CE8E8E;
+    transform: scale(1.1);
+}
+
+footer {
+    background: url(/images/footback.png);
+    color: white;
+    padding: 10px;
+    text-align: center;
+}
+
+.footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 7px;
+}
+
+.datosCreador {
+    margin-left: 10px;
+}
+
+/* <------------------------------ Fin del CSS del MAIN ------------------------------->*/
+
+@media only screen and (max-width: 768px) {
+
+    /* <------------------------------ Comienzo del CSS del HEADER ------------------------------->*/
+
+    .navBar {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    nav ul {
+        margin-top: 10px;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    nav ul li {
+        margin: 5px 0;
+    }
+
+    /* <------------------------------ Fin del CSS del HEADER ------------------------------->*/
+    /* <------------------------------ Comienzo del CSS del MAIN ------------------------------->*/
+
+    .conversionTexto {
+        flex-direction: column;
+    }
+
+    .conversionTexto li {
+        width: 100%;
+    }
+
+    .textoConve {
+        font-size: 1.5em;
+        margin: 5% 5%;
+        height: 250px;
+    }
+
+    .contenedorResultado {
+        height: 500px;
+    }
+
+    .botones-contenedor button {
+        font-size: 1em;
+        cursor: pointer;
+        margin-bottom: 10px;
+    }
+
+    .buscar {
+        transform: scale(0.5);
+    }
+
+    .respuesta {
+        font-size: 25px;
+    }
+
+    .footer {
+        text-align: center;
+    }
+}
+
+@media only screen and (max-width: 425px) {
+    .respuesta {
+        font-size: 15px;
+    }
+}
