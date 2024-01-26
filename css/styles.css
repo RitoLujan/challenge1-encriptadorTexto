@@ -12,7 +12,7 @@ body {
 /* <------------------------------ Comienzo del CSS del HEADER ------------------------------->*/
 
 header {
-    background: url(/images/footback.png);
+    background: url(../images/footback.png);
     color: white;
     padding: 10px;
 }
@@ -125,7 +125,7 @@ main {
 }
 
 .textoResultado {
-    background: url(/images/fondoTexto.png) no-repeat;
+    background: url(../images/fondoTexto.png) no-repeat;
     background-size: cover;
 }
 
@@ -178,7 +178,7 @@ main {
 }
 
 footer {
-    background: url(/images/footback.png);
+    background: url(../images/footback.png);
     color: white;
     padding: 10px;
     text-align: center;
